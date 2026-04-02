@@ -1,0 +1,154 @@
+<!DOCKTYPE html >
+<html lang= "en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Sailing Website DM SAILOR</title>
+        <meta name="viewport" content="width=devise-width, initial-scale=1.0">
+
+        <style>
+            body {
+                margin: 0;
+                font-family: Arial, Helvetica, sans-serif;
+                scroll-behavior: smooth;
+            }
+
+            section {
+                position: relative;
+                width: 100%;
+                height: 700px;
+                object-fit: block;
+            }
+            .overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0,0,0,0.35);
+            }
+
+            .nav {
+                position: absolute;
+                top:40px;
+                right: 70px;
+                color: white;
+                text-align: right;
+                font-size: 18px;
+                letter-spacing:2px;
+            }
+            .nav a {
+                color: white;
+                text-decoration: none;
+                margin-left: 20px;
+            }
+
+            .title {
+                position: absolute;
+                right: 40px;
+                top: 100px;
+                color: white;
+                text-align: right;
+                max-width: 500px;
+            }
+
+            .title h1 {
+                font-size: 100px;
+                margin: 0;
+                line-height: 1.1;
+                text-transform: uppercase;
+            }
+
+            .desc-left {
+                position: absolute;
+                left: 70px;
+                bottom:150px;
+                color: white;
+                max-width: 480px;
+            }
+
+            .desc-right {
+                position: absolute;
+                left: 90px;
+                bottom:50px;
+                color: white;
+                max-width: 450px;
+            }
+
+            .button {
+                display: inline-block;
+                margin-top:25px;
+                padding: 12px 30px;
+                border: 1px solid white;
+                color: white;
+                text-decoration: none;
+            }
+
+        
+        </style>
+    </head>
+
+    <body>
+
+        <!-- SLIDE 1-->
+         <section id="slide1">
+
+            <img scr="https://dmsailor.wordpress.com/wp-content/uploads/2026/02/dsc_4591-e1772110615357.jpg">
+            <div class="overlay"></div>
+
+            <div class="nav">
+                <a href="#">ABOUT</a>
+                <a href="#">CONTACT</a>
+                <a href="#">PARTNERS</a>
+
+                </div>
+
+                <div class="title">
+                    <h1>FLOW </h1>
+                    <h1>WITH</h1>
+                    <h1>IT</h1>
+                    <p style="font-size: 22px;margin-top:20px;"></p>
+
+                </div>
+
+                <div class="desc-left">
+                    <p style="font-size:20px;line-height:1.6;text-transform:uppercase">
+                        SAILING IS SOMETHING INCREDIBLE THAT YOU DEFINITELY NEED TO DO IN THIS LIFE 
+                    </p>
+                    <a href="#slide2" class="button">NEXT</a>
+
+
+
+                </div>
+
+            
+                "
+         </section>
+
+         <!--SLIDE 2-->
+         <section id="slide2">
+
+            <img scr="https: //dmsailor.wordpress.com/wp-content/uploads/2026/02/9818d569-4ced-43d9-9777-2269bc11c02d.jpeg">
+
+            <div class="overlay"></div>
+
+            <div class="title">
+                <h1>SAIL</h1>
+                <h1>BEYOND</h1>
+                <h1>LIMITS</h1>
+                <p style="font-size:22px;margin-top:20px;">
+
+                </p>
+            </div>
+
+            <div class="desc-right">
+                <p style="font-size:20px;line-height:1.6;text-transform:uppercase">
+                    EXPERIENCE THE FREEDOM OF OPEN WATERS AND THE TRUE ADVENTURE
+                </p>
+                <a href="#slide1" class="button"> BACK</a>
+                
+
+            </div>
+
+         </section>
+    </body>
+</html>

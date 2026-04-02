@@ -1,0 +1,423 @@
+<!DOCTYPE html >
+<html lang= "en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Sailing Website DM SAILOR</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+            body {
+               .bluemun-style {
+      font-family: 'Playfair Display', serif;
+      font-weight: 900;
+      font-size: 100px;
+      letter-spacing: 8px;
+      color: #0947c2;
+      text-transform: uppercase;
+      text-align: center;
+      text-shadow: 2px 2px 0px rgba(0,0,0,0.05);
+    }
+            }
+
+            section {
+                position: relative;
+                width: 100%;
+                height: 700px;
+                object-fit: cover;
+                
+            }
+
+            section img{
+
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                z-index:-1;
+            }
+            .overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0,0,0,0.35);
+            }
+
+            .nav {
+                position: absolute;
+                top:40px;
+                left: 30px;
+                color: white;
+                text-align: right;
+                font-size: 18px;
+                letter-spacing:2px;
+            }
+            .nav a {
+                color: white;
+                text-decoration: none;
+                margin-left: 20px;
+            }
+
+            .title {
+                position: absolute;
+                right: 40px;
+                top: 100px;
+                color: white;
+                text-align: right;
+                max-width: 500px;
+            }
+
+            .title h1 {
+                font-size: 100px;
+                margin: 0;
+                line-height: 1.1;
+                text-transform: uppercase;
+            }
+
+            .desc-left {
+                position: absolute;
+                left: 70px;
+                bottom:150px;
+                color: white;
+                max-width: 480px;
+            }
+
+            .desc-right {
+                position: absolute;
+                right: 30px;
+                bottom:50px;
+                color: rgb(208, 210, 214);
+                max-width: 450px;
+            }
+
+            .button {
+                display: inline-block;
+                margin-top:25px;
+                padding: 12px 30px;
+                border: 1px solid white;
+                color: white;
+                text-decoration: none;
+            }
+
+            .calendar-slider{
+width:1300px;
+max-width:100%;
+margin:100px auto;
+overflow:hidden;
+border:6px solid #f8f3f7;
+background:rgb(10, 38, 163);
+color:rgb(247, 242, 242);
+text-align:center;
+position:relative;
+margin-top: 25px;
+}
+
+.slides{
+display:flex;
+width:100%;
+transition:0.6s;
+}
+
+.month table{
+width:100%;
+border-collapse:separate;
+padding:10px;
+}
+
+.month th,.month td{
+border:1px solid rgba(5, 5, 5, 0.3);
+padding:10px;
+}
+
+.controls{
+margin-top:20px;
+}
+
+.controls label{
+cursor:pointer;
+margin:0 10px;
+padding:8px 15px;
+border:1px solid white;
+}
+
+/* slide movement */
+
+.calendar-track{
+display:flex;
+width:95%;   /* 7 months */
+transition:0.7s ease;
+
+}
+
+.month{
+width:100%;
+flex-shrink:0;  /* prevents shrinking */
+padding:6px;
+text-align:center;
+box-sizing:boarder-box;
+}
+
+.table img{
+    display: block;
+}
+        
+        </style>
+    </head>
+
+    <body>
+
+        <!-- SLIDE 1-->
+         <section id="slide1">
+
+            <img src="https://dmsailor.wordpress.com/wp-content/uploads/2026/02/dsc_4591-e1772110615357.jpg">
+            <div class="overlay"></div>
+
+            <div class="nav">
+                <a href="about.html">ABOUT</a>
+                <a href="contactsection.html.html">CONTACT</a>
+                <a href="partners.html">PARTNERS</a>
+                <a href="gallery.html">GALLERY</a>
+                <a href="resp.travel.html">RESP.TRAVEL</a>
+                <a href="final180326.html.html">HOME</a>
+
+                </div>
+
+                <div class="title">
+                    <h1>FLOW </h1>
+                    <h1>WITH</h1>
+                    <h1>IT</h1>
+                    <p style="font-size: 22px;margin-top:20px;"></p>
+
+                </div>
+
+                <div class="desc-left">
+                    <p style="font-size:20px;line-height:1.6;text-transform:uppercase">
+                        SAILING IS SOMETHING INCREDIBLE THAT YOU DEFINITELY NEED TO DO  
+                    </p>
+                    <a href="#slide2" class="button">NEXT</a>
+
+
+
+                </div>
+
+            
+                
+         </section>
+
+         <!--SLIDE 2-->
+         <section id="slide2">
+
+            <img src="https://dmsailor.wordpress.com/wp-content/uploads/2026/02/9818d569-4ced-43d9-9777-2269bc11c02d.jpeg">
+
+            <div class="overlay"></div>
+
+            <div class="title">
+                <h1>SAIL</h1>
+                <h1>BEYOND</h1>
+                <h1>LIMITS</h1>
+                <p style="font-size:22px;margin-top:20px;">
+
+                </p>
+            </div>
+
+            <div class="desc-right">
+                <p style="font-size:20px;line-height:1.6;text-transform:uppercase">
+                    EXPERIENCE THE FREEDOM OF OPEN WATERS AND THE TRUE ADVENTURE
+                </p>
+                <a href="#slide1" class="button"> BACK</a>
+                
+            </div>
+         </section>
+ 
+         <!--SLIDE3-->
+
+          <section id="slide3">
+            <div class="overlay"></div>
+            <table img="border:none"></table>
+            
+
+            <img src="https://dmsailor.wordpress.com/wp-content/uploads/2026/03/2aef1084-7f53-4296-8bd8-8d4aa48b32ae.jpg">
+            
+
+             <div>
+        <h1 style= font-size:50px;text-align:center;color:rgb(242,245,243);margin-top:10px;margin-bottom:50px;> BOOK YOUR<br>
+                     SAILING EXPERIENCE</h1>
+        
+         </div>
+
+<div class="calendar-slider">
+
+<a class="button" onclick="moveSlide(-1)">PREV</a>
+
+<div class="calendar-track" id="calendarTrack">
+
+<div class="month">
+<h2>APRIL 2026</h2>
+<p>THE START OF THE SAILING SEASON </p>
+<table>
+<tr>
+<th>SUN</th><th>MON</th><th>TUE</th><th>WED</th>
+<th>THU</th><th>FRI</th><th>SAT</th>
+</tr>
+
+<tr><td></td><td></td><td></td><td>1</td><td>2</td><td>3</td><td>4</td></tr>
+<tr><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td></tr>
+<tr><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td></tr>
+<tr><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td></tr>
+<tr><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td></td><td></td></tr>
+
+</table>
+</div>
+
+
+
+
+<div class="month">
+<h2>MAY 2026</h2>
+<p>CALM SEA AND PERFECT WIND CONDITIONS</p>
+<table>
+<tr>
+<th>SUN</th><th>MON</th><th>TUE</th><th>WED</th>
+<th>THU</th><th>FRI</th><th>SAT</th>
+</tr>
+
+<tr><td></td><td></td><td></td><td></td><td></td><td>1</td><td>2</td></tr>
+<tr><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td></tr>
+<tr><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td></tr>
+<tr><td>17</td><td>18<br>BOOKED</td><td>19<br>BOOKED</td><td>20<br>BOOKED</td><td>21<br>BOOKED</td><td>22<br>BOOKED</td><td>23<br>BOOKED</td></tr>
+<tr><td>24<br>BOOKED</td><td>25<br>BOOKED</td><td>26<br>BOOKED</td><td>27<br>BOOKED</td><td>28<br>BOOKED</td><td>29<br>BOOKED</td><td>30<br>BOOKED</td></tr>
+
+</table>
+</div>
+
+<div class="month">
+<h2>JUNE 2026</h2>
+<p>LONG SUNNY DAYS </p>
+
+<table>
+<tr>
+<th>SUN</th><th>MON</th><th>TUE</th><th>WED</th>
+<th>THU</th><th>FRI</th><th>SAT</th>
+</tr>
+
+<tr><td>31<br>BOOKED</td><td>1<br>BOOKED</td><td>2<br>BOOKED</td><td>3<br>BOOKED</td><td>4<br>BOOKED</td><td>5<br>BOOKED</td><td>6<br>BOOKED</td></tr>
+<tr><td>7<br>BOOKED</td><td>8<br>BOOKED</td><td>9<br>BOOKED</td><td>10<br>BOOKED</td><td>11<br>BOOKED</td><td>12<br>BOOKED</td><td>13<br>BOOKED</td></tr>
+<tr><td>14<br>BOOKED</td><td>15<br>BOOKED</td><td>16<br>BOOKED</td><td>17<br>BOOKED</td><td>18<br>BOOKED</td><td>19<br>BOOKED</td><td>20<br>BOOKED</td></tr>
+<tr><td>21<br>BOOKED</td><td>22<br>BOOKED</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td></tr>
+<tr><td>28</td><td>29</td><td>30</td><td></td><td></td><td></td><td></td></tr>
+
+</table>
+</div>
+
+<div class="month">
+<h2>JULY 2026</h2>
+<p>BEAUTIFUL SAILING ADVENTURES</p>
+
+<table>
+<tr>
+<th>SUN</th><th>MON</th><th>TUE</th><th>WED</th>
+<th>THU</th><th>FRI</th><th>SAT</th>
+</tr>
+
+<tr><td></td><td></td><td></td><td>1<br>BOOKED</td><td>2<br>BOOKED</td><td>3<br>BOOKED</td><td>4<br>BOOKED</td></tr>
+<tr><td>5<br>BOOKED</td><td>6<br>BOOKED</td><td>7<br>BOOKED</td><td>8<br>BOOKED</td><td>9<br>BOOKED</td><td>10<br>BOOKED</td><td>11<br>BOOKED</td></tr>
+<tr><td>12<br>BOOKED</td><td>13<br>BOOKED</td><td>14<br>BOOKED</td><td>15<br>BOOKED</td><td>16<br>BOOKED</td><td>17<br>BOOKED</td><td>18<br>BOOKED</td></tr>
+<tr><td>19<br>BOOKED</td><td>20<br>BOOKED</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td></tr>
+<tr><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td>31</td><td></td></tr>
+
+</table>
+</div>
+
+<div class="month">
+<h2>AUGUST 2026</h2>
+<p>PRISTINE WATERS AND ISLANDS HOPPING</p>
+
+<table>
+<tr>
+<th>SUN</th><th>MON</th><th>TUE</th><th>WED</th>
+<th>THU</th><th>FRI</th><th>SAT</th>
+</tr>
+
+<tr><td></td><td></td><td></td><td></td><td></td><td></td><td>1</td></tr>
+<tr><td>2</td><td>3<br>BOOKED</td><td>4<br>BOOKED</td><td>5<br>BOOKED</td><td>6<br>BOOKED</td><td>7<br>BOOKED</td><td>8<br>BOOKED</td></tr>
+<tr><td>9<br>BOOKED</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td></tr>
+<tr><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td></tr>
+<tr><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td></tr>
+
+</table>
+</div>
+
+<div class="month">
+<h2>SEPTEMBER 2026</h2>
+<p>WARM SEAS AND STUNNING SUNSETS</p>
+
+<table>
+<tr>
+<th>SUN</th><th>MON</th><th>TUE</th><th>WED</th>
+<th>THU</th><th>FRI</th><th>SAT</th>
+</tr>
+
+<tr><td>30<br>BOOKED</td><td>31<br>BOOKED</td><td>1<br>BOOKED</td><td>2<br>BOOKED</td><td>3<br>BOOKED</td><td>4<br>BOOKED</td><td>5<br>BOOKED</td></tr>
+<tr><td>6<br>BOOKED</td><td>7<br>BOOKED</td><td>8<br>BOOKED</td><td>9</td><td>10</td><td>11</td><td>12<br>BOOKED</td></tr>
+<tr><td>13<br>BOOKED</td><td>14<br>BOOKED</td><td>15<br>BOOKED</td><td>16<br>BOOKED</td><td>17<br>BOOKED</td><td>18<br>BOOKED</td><td>19<br>BOOKED</td></tr>
+<tr><td>20<br>BOOKED</td><td>21<br>BOOKED</td><td>22<br>BOOKED</td><td>23<br>BOOKED</td><td>24<br>BOOKED</td><td>25<br>BOOKED</td><td>26<br>BOOKED</td></tr>
+<tr><td>27</td><td>28</td><td>29</td><td>30</td><td></td><td></td><td></td></tr>
+
+</table>
+</div>
+
+<div class="month">
+<h2>OCTOBER 2026</h2>
+<p>PEACEFULL AUTUMN SAILING </p>
+
+<table>
+<tr>
+<th>SUN</th><th>MON</th><th>TUE</th><th>WED</th>
+<th>THU</th><th>FRI</th><th>SAT</th>
+</tr>
+
+<tr><td></td><td></td><td></td><td></td><td>1</td><td>2</td><td>3</td></tr>
+<tr><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td></tr>
+<tr><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td></tr>
+<tr><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td></tr>
+<tr><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td>31</td></tr>
+
+</table>
+</div>
+
+</div>
+<a class="button" onclick="moveSlide(1)" >NEXT</a>
+
+</div>
+
+</section>
+
+<script>
+
+let currentSlide = 0;
+
+function moveSlide(direction){
+
+const track = document.getElementById("calendarTrack");
+const slides = document.querySelectorAll(".month");
+
+currentSlide += direction;
+
+if(currentSlide < 0){
+currentSlide = slides.length - 1;
+}
+
+if(currentSlide >= slides.length){
+currentSlide = 0;
+}
+
+track.style.transform = "translateX(-" + currentSlide * 100 + "%)";
+
+}
+
+</script>
+    </body>
+</html>
